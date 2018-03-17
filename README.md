@@ -248,7 +248,6 @@ Ex.:<br/>
 
 #### O método _main_
 * O primeiro passo para criar uma aplicação java executável é criar uma classe com o _método main_ com a _assinatura_(nome e parâmetros do método) que combinam com o _método main_ definido a seguir:
-
 <details>
     <summary>Ex.:</summary>
     <p>Exemplo do método main</p>
@@ -263,8 +262,8 @@ Ex.:<br/>
        
 </details>
 
+#### Método main com _vargars_
 * O parâmetro _array_ de _String_ -> _'String[] args'_ pode ser substituido pelo _argumento variável_ -> _'String... args'_.
-
 <details>
     <summary>Ex.:</summary>
     <p>Exemplo do método main com argumento variável</p>
@@ -279,6 +278,7 @@ Ex.:<br/>
        
 </details>
 
+#### Regras método _main_
 * O método _main_ deve cumprir com algumas regras:
 1.  O metodo deve ser marcado com o _modificador de acesso_ ___public___;
 2.  O metodo deve ser marcado com o _modificador sem acesso_ ___static___;
