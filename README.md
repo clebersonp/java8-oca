@@ -246,7 +246,7 @@ Pode ser definido uma classe ou interface em um único código java ou múltipla
 Ex.:<br/>
 ![picture alt](https://github.com/clebersonp/java8-oca/blob/master/src/main/resouces/img/aplicacao_executavel_java.jpg "Aplicação executável")
 
-#### O método _main_
+#### Método main
 * O primeiro passo para criar uma aplicação java executável é criar uma classe com o _método main_ com a _assinatura_(nome e parâmetros do método) que combinam com o _método main_ definido a seguir:
 <details>
     <summary>Ex.:</summary>
@@ -288,3 +288,6 @@ Ex.:<br/>
 
 Ex.:
 ![picture alt](https://github.com/clebersonp/java8-oca/blob/master/src/main/resouces/img/metodo_main_explicacao.jpg "Método main")
+
+#### Sobrecarga de métodos _main_
+* Em uma classe pode existir _n_ métodos de mesmo nome chamado _main_. Embora no exemplo a seguir exista alguns métodos _main_, apenas um será executado pela __JVM__ e será aquela que possui a mesma assinatura que foi citada aqui: [Método main](#método-main).
