@@ -238,3 +238,9 @@ Pode ser definido uma classe ou interface em um único código java ou múltipla
 
 ----
 
+## Classes Java executáveis e não executáveis
+* Para ser considerada uma classe java executável é necessário ter um método especial ou _entry point_ chamado de método ___main___;
+* Uma aplicação pode conter milhares de classes, interfaces, enums, mas para a aplicação ser executada pela __JVM__(Java Virtual Machine) é necessário ter uma classe executável. Será essa classe que dara inicio à execução da aplicação;
+* Uma aplicação pode conter várias classes executáveis. Porém só uma e somente uma classe executável deve ser informada como ___entry point___ à __JVM__ para dar início à execução.
+
+E.:<br/>
