@@ -245,3 +245,46 @@ Pode ser definido uma classe ou interface em um único código java ou múltipla
 
 Ex.:<br/>
 ![picture alt](https://github.com/clebersonp/java8-oca/blob/master/src/main/resouces/img/aplicacao_executavel_java.jpg "Aplicação executável")
+
+#### O método _main_
+* O primeiro passo para criar uma aplicação java executável é criar uma classe com o _método main_ com a _assinatura_(nome e parâmetros do método) que combinam com o _método main_ definido a seguir:
+
+<details>
+    <summary>Ex.:</summary>
+    <p>Exemplo do método main</p>
+        
+        package br.com.pauluci;
+
+        public class Hello {
+          public static void main(String[] args) {
+            System.out.println("Hello World");
+          }
+        }
+       
+</details>
+
+* O parâmetro _array_ de _String_ -> _'String[] args'_ pode ser substituido pelo _argumento variável_ -> _'String... args'_.
+
+<details>
+    <summary>Ex.:</summary>
+    <p>Exemplo do método main com argumento variável</p>
+        
+        package br.com.pauluci;
+
+        public class Hello {
+          public static void main(String... args) {
+            System.out.println("Hello World");
+          }
+        }
+       
+</details>
+
+* O método _main_ deve cumprir com algumas regras:
+1.  O metodo deve ser marcado com o _modificador de acesso_ ___public___;
+2.  O metodo deve ser marcado com o _modificador sem acesso_ ___static___;
+3.  O nome método deve ser ___main___;
+4.  O retorno do método deve ser ___void___;
+5.  O método deve aceitar agumentos do tipo _array de String_ ou _argumento variável_(_varargs_) do tipo _String_;
+
+Ex.:
+![picture alt](https://github.com/clebersonp/java8-oca/blob/master/src/main/resouces/img/metodo_main_explicacao.jpg "Método main")
