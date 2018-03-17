@@ -200,3 +200,41 @@ Não importa qual a marca da sua TV, toda TV provê de funcionalidades comuns, c
           }
         }
 </details>
+
+----
+
+## Definição de única ou múltiplas classes em um único arquivo fonte java.
+Pode ser definido uma classe ou interface em um único código java ou múltiplas entidades.
+* Em um arquivo fonte java só pode existir uma classe ou interface ____public__ e seu nome deve combinar com o nome do aquivo ___.java___;
+* Pode conter múltiplas classes e/ou interfaces dentro de um mesmo arquivo ___.java___. Porém, somente a classe de mesmo nome do arquivo deve ser declarada como ___public___;
+* A ordem em que as múltiplas entidades são definidas dentro de um mesmo arquivo não importa;
+* Quando usadas as instruções ___package___ ou ___import___, ambas instruções são aplicadas para todas as classes ou interfaces definidas no mesmo arquivo fonte;
+* Quando compilado, será gerado um ___bytecode___(.class) para cada entidade separadamente;
+* As entidades que foram definidas dentro do mesmo arquivo java não podem ser definidas em ___packages___ diferentes uma das outras;
+
+<details>
+    <summary>Ex.:</summary>
+    <p>Exemplo de definição de múltiplas entidades em um único arquivo fonte Celular.java</p>
+        
+        package br.com.pauluci;
+
+        public class Celular {
+          // codigo da classe Celular
+        }
+
+        interface Ligavel {
+          // codigo da interface
+        }
+
+        class Mobilidade {
+          // código da classe Mobilidade
+        }
+
+        interface Portatil {
+          // código da interface Portatil
+        }
+        
+</details>
+
+----
+
