@@ -246,7 +246,7 @@ Pode ser definido uma classe ou interface em um único código java ou múltipla
 Ex.:<br/>
 ![picture alt](https://github.com/clebersonp/java8-oca/blob/master/src/main/resouces/img/aplicacao_executavel_java.jpg "Aplicação executável")
 
-#### Método main
+#### Método _main_
 * O primeiro passo para criar uma aplicação java executável é criar uma classe com o _método main_ com a _assinatura_(nome e parâmetros do método) que combinam com o _método main_ definido a seguir:
 <details>
     <summary>Ex.:</summary>
