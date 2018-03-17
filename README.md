@@ -160,3 +160,43 @@ __Comportamentos__: são implementados usando métodos;
 
 #### Construtores
 * Na classe _Celular_ do exemplo anterior define um simples contrutor que recebe o _IMEI_ como parâmetro. Um construtor é utilizado para criar e inicializar os objetos de uma classe. A classe pode definir multiplos construtores que aceitam diferentes configurações de parâmetros;
+
+----
+
+## Definição de interface
+#### Interface especifica os contratos que a classe deve implementar.<br/>
+Ex:<br/>
+Não importa qual a marca da sua TV, toda TV provê de funcionalidades comuns, como por exemplo, trocar de canal, alterar o volume. Podemos comparar o controle da TV com uma interface e a TV com uma classe que implementa a interface controle.<br/>
+* Por padrão, métodos de interface são implicitamente abstratos, ou seja, sem código no corpo do método;
+* Interfaces podem conter constantes;
+* Com Java 8, interfaces podem também definir métodos _estáticos_(___static___);
+* A partir do Java 8, interfaces podem possuir métodos com definição(implementação) no corpo e são chamados de ___métodos default___.
+
+<details>
+    <summary>Ex.:</summary>
+    <p>Exemplo definição de interface</p>
+        
+        package br.com.pauluci;
+
+        public interface Controle {
+
+          public static final String COMUNICACAO = "IR"; // constante
+
+          // métodos abstratos por defaul
+          void mudarCanal(int numeroCanal);
+          void aumentarVolume();
+          void diminuirVolume();
+
+          // Novidade no Java 8. Métodos com implementação
+          default void aumentarVolumeNoIntervalo(int intervalo) {
+            for (; intervalo > 0; intervalo-- ) {
+              this.aumentarVolume();
+            }
+          }
+
+          // Método estático só pode acessar membros estáticos
+          static String recuperarTipoComunicacao() {
+            return Controle.COMUNICACAO;
+          }
+        }
+</details>
