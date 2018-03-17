@@ -35,7 +35,14 @@ Anotações e exemplos práticos para certificação.
           private String documento; // número do documento
           private String nome; // nome da pessoa
           private LocalDate nascimento; // data do nascimento
-
+        
+          // contrutor
+          public Pessoa(String documento, String nome, LocalDate nascimento) {
+            this.documento = documento;
+            this.nome = nome;
+            this.nascimento = nascimento;
+          }
+        
           // métodos getters e setters - comportamento do objeto
           public String getDocumento() {
             return documento;
@@ -86,3 +93,70 @@ Opcional                | Opcional               | Obrigatório   | Obrigatório
 </details>
 
 ----
+
+## Definição de classe
+Classe é o design usado para especificar _atributos_ e _comportamentos_ de um objeto.<br/>
+__Atributos__: são implementados usando variáveis;<br/>
+__Comportamentos__: são implementados usando métodos;
+
+<details>
+    <summary>Ex.:</summary>
+    <p>Exemplo definição de atributos e métodos de uma classe</p>
+        
+        package br.com.pauluci;
+
+        public class Celular {
+
+          private String IMEI;
+          private String modelo;
+          private String fabricante;
+          private String peso;
+            
+          public Celular(String IMEI) {
+            this.IMEI = IMEI;
+          }
+          
+          public String getIMEI() {
+            return IMEI;
+          }
+          public void setIMEI(String iMEI) {
+            IMEI = iMEI;
+          }
+
+          public String getModelo() {
+            return modelo;
+          }
+          public void setModelo(String modelo) {
+            this.modelo = modelo;
+          }
+
+          public String getFabricante() {
+            return fabricante;
+          }
+          public void setFabricante(String fabricante) {
+            this.fabricante = fabricante;
+          }
+
+          public String getPeso() {
+            return peso;
+          }
+          public void setPeso(String peso) {
+            this.peso = peso;
+          }
+          
+          public void fazerChamada() {
+            // codigo...
+          }
+        }
+</details>
+
+#### Variáveis
+* As variáveis que foram usadas no exemplo anterior são utilizadas para armazenar o estado do objeto(_instância_) Celular. E as variáveis são chamadas de _variáveis de instância_ ou _atributos de instância_ e seu valor pertence somente ao objeto;
+* Variáveis declaradas com o _modificador sem acesso_ __static__ na classe são chamadas de _variáveis de classe_ e seu valor é compartilhado para todos os objetos da aplicação;
+
+#### Métodos
+* Os métodos criados no exemplo anterior são utilizadas para manipular o estado do objeto(instância) Celular. São chamados de ___métodos de instância___;
+* Os ___métodos de classe___ ou ___métodos statics___ podem ser utilizados para manipular ___variáveis statics___ ou invocar outros ___métodos statics___;
+
+#### Construtores
+* Na classe _Celular_ do exemplo anterior define um simples contrutor que recebe o _IMEI_ como parâmetro. Um construtor é utilizado para criar e inicializar os objetos de uma classe. A classe pode definir multiplos construtores que aceitam diferentes configurações de parâmetros;
