@@ -262,7 +262,7 @@ Ex.:<br/>
        
 </details>
 
-#### Método main com _vargars_
+#### Método _main_ com _vargars_
 * O parâmetro _array_ de _String_ -> _'String[] args'_ pode ser substituido pelo _argumento variável_ -> _'String... args'_.
 <details>
     <summary>Ex.:</summary>
