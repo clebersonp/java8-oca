@@ -165,7 +165,7 @@ __Comportamentos__: são implementados usando métodos;
 
 ## Definição de interface
 #### Interface especifica os contratos que a classe deve implementar.<br/>
-Ex:<br/>
+Ex.:<br/>
 Não importa qual a marca da sua TV, toda TV provê de funcionalidades comuns, como por exemplo, trocar de canal, alterar o volume. Podemos comparar o controle da TV com uma interface e a TV com uma classe que implementa a interface controle.<br/>
 * Por padrão, métodos de interface são implicitamente abstratos, ou seja, sem código no corpo do método;
 * Interfaces podem conter constantes;
@@ -243,4 +243,5 @@ Pode ser definido uma classe ou interface em um único código java ou múltipla
 * Uma aplicação pode conter milhares de classes, interfaces, enums, mas para a aplicação ser executada pela __JVM__(Java Virtual Machine) é necessário ter uma classe executável. Será essa classe que dara inicio à execução da aplicação;
 * Uma aplicação pode conter várias classes executáveis. Porém só uma e somente uma classe executável deve ser informada como ___entry point___ à __JVM__ para dar início à execução.
 
-E.:<br/>
+Ex.:<br/>
+![picture alt](https://github.com/clebersonp/java8-oca/blob/master/src/main/resouces/img/aplicacao_executavel_java.jpg "Aplicação executável")
